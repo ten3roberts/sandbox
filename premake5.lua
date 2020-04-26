@@ -1,7 +1,8 @@
 workspace "sandbox"
+	configurations "x64"
 
--- Include crescent from the symlink
-include (crescent)
+-- Includes crescent from source
+include ("crescent")
 
 project "sandbox"
 	kind		"ConsoleApp"
@@ -14,4 +15,3 @@ project "sandbox"
 	-- Link crescent and GLFW
 	-- Vulkan is linked by crescent
 	links { "crescent", "GLFW" }
-	
