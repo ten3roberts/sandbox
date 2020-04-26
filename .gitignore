@@ -1,0 +1,27 @@
+# user generated files
+.vscode
+Makefile
+bin
+obj 
+*.make
+
+# binary files
+*.exe
+*.so
+*.a
+.filters
+*.swp
+
+# Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vs
+
+# logs
+*.log
+logs/
+
+# Shader bytecode
+*.spv
