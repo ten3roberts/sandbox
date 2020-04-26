@@ -18,7 +18,7 @@ int application_start(int argc, char** argv)
 		return -1;
 
 	input_init(window);
-	vulkan_init();
+	graphics_init();
 
 	LOG_S("Initialization took %f ms", timer_stop(&timer) * 1000);
 
@@ -57,7 +57,7 @@ int application_start(int argc, char** argv)
 			LOG("Framerate %d %f", time_framecount(), time_framerate());
 		}
 	}
-	vulkan_terminate();
+	graphics_terminate();
 	LOG_S("Terminating");
 	window_destroy(window);
 	settings_save();
