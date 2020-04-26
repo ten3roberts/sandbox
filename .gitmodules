@@ -1,3 +1,4 @@
 [submodule "crescent"]
 	path = crescent
 	url = git@github.com:ten3roberts/crescent
+	branch = devel
