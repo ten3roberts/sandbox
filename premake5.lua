@@ -1,7 +1,7 @@
 workspace "sandbox"
 
--- Include crescent
-include ("crescent")
+-- Include crescent from the symlink
+include (crescent)
 
 project "sandbox"
 	kind		"ConsoleApp"
